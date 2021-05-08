@@ -3,13 +3,24 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         listWords();
+
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Иванов", "89685551122");
+        phoneBook.add("Иванов", "89677766321");
+        phoneBook.add("Михайлов", "89623147562");
+        phoneBook.add("Мальцев", "89174576521");
+        phoneBook.add("Фролов", "89192224578");
+        phoneBook.add("Фролов","89995523366");
+        phoneBook.get("Иванов");
+        phoneBook.get("Михайлов");
+        phoneBook.get("Мальцев");
+        phoneBook.get("Фролов");
+
+
+
     }
 
     public static void listWords(){
-        //List<String> list = new ArrayList<>();
-        //int count = Collections.frequency(list, "kr");
-
-        int count = 0;
 
         List<String> names = new ArrayList<>();
         names.add("Иван");
@@ -38,4 +49,9 @@ public class Main {
         }
         System.out.println(uniqueNames);
     }
+
+
+
+
+
 }
